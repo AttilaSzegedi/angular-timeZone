@@ -1,3 +1,9 @@
+# Mini-Project
+
+This project was made the basic input output data exchange between HTML and components.
+
+Made re-usable companonent for 2 different time zone. And fresfresh the time based upon user click, and set the defualt time zone based upon user selection
+
 # AngularTimeZone
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.

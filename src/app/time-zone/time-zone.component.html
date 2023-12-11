@@ -1,0 +1,13 @@
+<p>{{time}}</p>
+<!--Add time to label-->
+<p> {{timezone}}</p>
+<!--Add timezone to label-->
+
+    <button (click)="refressTimeZone()">Frissítés</button>
+    <!--event fro click in button to get a new time zone -->
+    <button (click)="selectTimezone()"
+    [disabled]="selected" >Időzona Kiválasztás</button>
+    <!--event fro click in button to get a select the time zone -->
+    
+    
+    

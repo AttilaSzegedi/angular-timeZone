@@ -1,14 +1,15 @@
 <h1>{{title}}</h1>
 <!--Add Titel -->
-<app-timezone [timezone]="'Europe/Budapest'"
-(changeTimezone)="TimezoneChange($event)"
-[selected]="selectedTimezone === 'Europe/Budapest'"
-></app-timezone>
-<!--Add timezone component with value for time zone-->
-<!--Add select timezone component with value for time zone-->
-<app-timezone [timezone]="'Asia/Tokyo'"
-(changeTimezone)="TimezoneChange($event)"
-[selected]="selectedTimezone === 'Asia/Tokyo'"
-></app-timezone>
-<!--Add select timezone component with value for time zone-->
-<!--Add select timezone component with value for time zone-->
+<div class="holder">
+<ng-container *ngFor="let zone of displayedTimezones">
+    <app-timezone [timezone]="zone"
+    (changeTimezone)="TimezoneChange($event)"
+    [selected]="selectedTimezone === zone"
+    ></app-timezone>
+    <!--Add timezone component with value for time zone-->
+    <!--Add select timezone component with value for time zone-->
+</ng-container>
+</div>
+<br>
+<button *ngIf="displayedTimezones.length <= 5" (click)="addNewTimezone()" class="newtimezone">Új időzona hozzáadása</button>
+<!--add button to create new timezone-->

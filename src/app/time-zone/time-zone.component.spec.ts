@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TimeZoneComponent } from './time-zone.component';
+import { TimeZoneComponens } from './time-zone.component';
 
 describe('TimeZoneComponent', () => {
-  let component: TimeZoneComponent;
-  let fixture: ComponentFixture<TimeZoneComponent>;
+  let component: TimeZoneComponens;
+  let fixture: ComponentFixture<TimeZoneComponens>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TimeZoneComponent]
+      imports: [TimeZoneComponens]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TimeZoneComponent);
+    fixture = TestBed.createComponent(TimeZoneComponens);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,7 +1,9 @@
-<p>{{time}}</p>
-<!--Add time to label-->
-<p> {{timezone}}</p>
-<!--Add timezone to label-->
+<div class="container" [ngClass]="{'selected':selected}">
+  <input type="text" name="" id="" [(ngModel)]="tName">
+  <p>{{time | date:'longTime'}}</p>
+  <!--Add time to label-->
+  <p> {{timezone}}</p>
+  <!--Add timezone to label-->
 
     <button (click)="refressTimeZone()">Frissítés</button>
     <!--event fro click in button to get a new time zone -->
@@ -9,5 +11,5 @@
     [disabled]="selected" >Időzona Kiválasztás</button>
     <!--event fro click in button to get a select the time zone -->
     
-    
+</div>
     
